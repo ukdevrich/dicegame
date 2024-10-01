@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body onload ="gameStart()">
+
+
+
+<div class="container">
+
+    <div class="header"><h1>DICE GAME</h1></div>
+
+    <div id="playButtonDiv"><button id="playButton" onclick="audio.play(); playGameScore(); playGameResult();">Play</button></div>
+    <div id="resetButtonDiv"><button id="resetButton" onclick="resetGame();">Reset Game</button></div>
+
+    <div class="playernames">
+      <div id="player1name">Player 1</div>
+      <div class="VS">VS</div>      
+      <div id="player2name">Player 2</div>
+    </div>  
+
+    <div class="gameScores">
+
+      <div id="player1score">
+        <div id="player1diceface1"><img src="./images/dice-1.svg"  height="100%" width="100%"></div>
+        <div id="player1diceface2"><img src="./images/dice-2.svg"  height="100%" width="100%"></div>
+        <div id="player1diceface3"><img src="./images/dice-3.svg"  height="100%" width="100%"></div>
+        <div id="player1diceface4"><img src="./images/dice-4.svg"  height="100%" width="100%"></div>
+        <div id="player1diceface5"><img src="./images/dice-5.svg"  height="100%" width="100%"></div>
+        <div id="player1diceface6"><img src="./images/dice-6.svg"  height="100%" width="100%"></div>    
+      </div>
+
+      <div id="player2score">
+        <div id="player2diceface1"><img src="./images/dice-1.svg"  height="100%" width="100%"></div>
+        <div id="player2diceface2"><img src="./images/dice-2.svg"  height="100%" width="100%"></div>
+        <div id="player2diceface3"><img src="./images/dice-3.svg"  height="100%" width="100%"></div>
+        <div id="player2diceface4"><img src="./images/dice-4.svg"  height="100%" width="100%"></div>
+        <div id="player2diceface5"><img src="./images/dice-5.svg"  height="100%" width="100%"></div>
+        <div id="player2diceface6"><img src="./images/dice-6.svg"  height="100%" width="100%"></div>       
+      </div>
+
+    </div>
+      
+      <div id="playerResults">
+        <div id="player1result"></div>
+        <div id="player2result"></div>
+      </div>
+
+   
+
+    <div class="gameResult">
+      <div id="gameResult"></div>
+    </div>
+
+    <footer id="homepageTrademark"> @ukdevrich </footer>
+    
+
+
+</div> 
+
+  
+
+
+
+
+
+
+
+
+    
+   
+    
+    
+
+<script src="./index.js"></script> 
+    
+  
+</body>
+</html>
